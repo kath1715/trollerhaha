@@ -155,7 +155,7 @@ class StripeChecker():
 
                 if error_msg == "Your card's security code is incorrect.":
                     print(fg[1] + "┌───────[ " + credit_card + " ]──(" + str(credit_entry) + ")")
-                    print(fg[1] + "└────────── LIVE! ~> USAEPAY and WorldPay (Alpha Checker)")
+                    print(fg[1] + "└────────── LIVE! ~> But Incorrect Cvv (Alpha Checker)")
 
                 else:
                     print(fg[0] + "┌───────[ " + credit_card + " ]──(" + str(credit_entry) + ")")
